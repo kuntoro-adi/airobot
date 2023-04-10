@@ -589,14 +589,6 @@
     <dynamics damping="0.5"/>
   </joint>
   <link name="gripper_r_finger_r">
-    <contact>
-      <friction_anchor/>
-      <stiffness value="30000.0"/>
-      <damping value="1000.0"/>
-      <spinning_friction value="0.15"/>
-      <rolling_friction value="0.15"/>
-      <lateral_friction value="150.0"/>
-    </contact>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.01"/>
@@ -632,14 +624,6 @@
     <mimic joint="gripper_r_joint"/>
   </joint>
   <link name="gripper_r_finger_l">
-    <contact>
-      <friction_anchor/>
-      <stiffness value="30000.0"/>
-      <damping value="1000.0"/>
-      <spinning_friction value="0.15"/>
-      <rolling_friction value="0.15"/>
-      <lateral_friction value="150.0"/>
-    </contact>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.01"/>
@@ -805,7 +789,7 @@
     </actuator>
   </transmission>
   <!-- Table top -->
-  <!-- <joint name="yumi_body_to_table_top" type="fixed">
+  <joint name="yumi_body_to_table_top" type="fixed">
     <parent link="yumi_body"/>
     <child link="table_top"/>
     <origin rpy="0 0 1.57079" xyz="0.110910 0 0.0"/>
@@ -818,7 +802,7 @@
       </geometry>
       <material name="Grey"/>
     </visual>
-  </link> -->
+  </link>
   <!-- Table base -->
   <!-- <joint name="yumi_body_to_table_base" type="fixed">
     <parent link="yumi_body"/>

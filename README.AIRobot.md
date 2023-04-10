@@ -1,25 +1,3 @@
-# Note
-
-This is a modified version of AIRobot repository [1] on `yumi_grippers.urdf` that includes:
-1.  Removing table top.    
-2.  Adding frictions on the finger (experimental, the value might be changed), inspired from [2].
-```
-...
-<link name="gripper_r_finger_l">
-    <contact>
-      <friction_anchor/>
-      <stiffness value="30000.0"/>
-      <damping value="1000.0"/>
-      <spinning_friction value="0.15"/>
-      <rolling_friction value="0.15"/>
-      <lateral_friction value="150.0"/>
-    </contact>
-    ...
-``` 
-
-[1] https://github.com/Improbable-AI/airobot
-[2] https://github.com/bulletphysics/bullet3/blob/master/examples/pybullet/gym/pybullet_data/franka_panda/panda.urdf
-
 # AIRobot
 
 [![Documentation Status](https://readthedocs.org/projects/airobot/badge/?version=latest)](https://airobot.readthedocs.io/en/latest/?badge=latest)
